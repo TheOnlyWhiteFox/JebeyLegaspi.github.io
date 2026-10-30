@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jebey G. Legaspi | Portfolio</title>
+  <style>
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+      color: #242424;
+      background: #f5f6f8;
+    }
+    header {
+      background: #172554;
+      color: white;
+      padding: 22px 8%;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+    nav strong { font-size: 1.1rem; letter-spacing: .3px; }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 18px;
+      font-size: .95rem;
+    }
+    nav a:hover { text-decoration: underline; }
+    .hero {
+      background: #172554;
+      color: white;
+      padding: 76px 8% 88px;
+    }
+    .hero .intro { max-width: 760px; }
+    .eyebrow {
+      color: #bfdbfe;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: .82rem;
+      font-weight: bold;
+    }
+    h1 {
+      font-size: clamp(2.3rem, 6vw, 4.2rem);
+      line-height: 1.1;
+      margin: 12px 0;
+    }
+    .hero p { max-width: 650px; color: #e5e7eb; font-size: 1.08rem; }
+    .hero-link {
+      display: inline-block;
+      margin-top: 16px;
+      padding: 11px 18px;
+      border-radius: 6px;
+      background: white;
+      color: #172554;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    main { width: min(1050px, 84%); margin: 0 auto; }
+    section { padding: 52px 0 10px; }
+    h2 {
+      color: #172554;
+      font-size: 1.8rem;
+      margin: 0 0 18px;
+    }
+    .about-text { max-width: 800px; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 18px;
+    }
+    .card {
+      background: white;
+      border: 1px solid #e2e8f0;
+      border-radius: 10px;
+      padding: 22px;
+      box-shadow: 0 5px 18px rgba(15, 23, 42, .04);
+    }
+    .card h3 { margin: 0 0 8px; color: #1e293b; }
+    .card p { margin: 0 0 12px; color: #4b5563; }
+    .tag {
+      display: inline-block;
+      background: #eaf0ff;
+      color: #1e3a8a;
+      border-radius: 20px;
+      padding: 4px 10px;
+      margin: 4px 4px 0 0;
+      font-size: .82rem;
+    }
+    .card a, .contact a { color: #1d4ed8; font-weight: bold; }
+    .contact-box {
+      background: white;
+      border: 1px solid #e2e8f0;
+      border-radius: 10px;
+      padding: 24px;
+      max-width: 650px;
+    }
+    .contact-box p { margin: 8px 0; }
+    footer {
+      margin-top: 60px;
+      padding: 22px 8%;
+      text-align: center;
+      background: #172554;
+      color: #dbeafe;
+      font-size: .9rem;
+    }
+    @media (max-width: 600px) {
+      nav { align-items: flex-start; }
+      nav a { margin: 0 12px 0 0; }
+      .hero { padding-top: 55px; }
+      main { width: 88%; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <strong>JEBEY G. LEGASPI</strong>
+      <div>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <div class="intro">
+      <div class="eyebrow">BS Information Technology Student</div>
+      <h1>Hello, I'm Jebey.</h1>
+      <p>I'm a first-year BSIT student at PHINMA Cagayan de Oro College. I'm learning programming and web development, and I enjoy building projects that help organize information and make tasks easier.</p>
+      <a class="hero-link" href="#projects">View My Projects</a>
+    </div>
+  </div>
+
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <p class="about-text">I am an Information Technology student developing my skills in Python programming, HTML, and CSS. Through school projects, I practice creating programs, organizing data, and solving basic problems. I am continuing to learn and improve as I gain more experience.</p>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="grid">
+        <div class="card"><h3>Python Programming</h3><p>Basic programming, functions, loops, and working with records.</p></div>
+        <div class="card"><h3>HTML and CSS</h3><p>Creating and styling simple web pages.</p></div>
+        <div class="card"><h3>Microsoft Office</h3><p>Preparing documents and presentations for school work.</p></div>
+      </div>
+    </section>
+
+    <section id="tools">
+      <h2>Tools</h2>
+      <div class="grid">
+        <div class="card"><h3>Visual Studio Code</h3><p>For writing and editing code.</p></div>
+        <div class="card"><h3>Microsoft Word</h3><p>For writing and formatting documents.</p></div>
+        <div class="card"><h3>Microsoft PowerPoint</h3><p>For creating presentations.</p></div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Media Vault – Web-Based Media Organizer</h3>
+          <p>A web application for organizing movies, anime, dramas, and comics. It includes options to add titles, categories, tags, images, search, filter, and import or export data.</p>
+          <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span>
+          <p style="margin-top:16px"><a href="https://github.com/TheOnlyWhiteFox/Media-Vault-Web-Based-Media-Organizer" target="_blank" rel="noopener">View Source Code</a></p>
+        </article>
+
+        <article class="card">
+          <h3>GST Rice Trading – Debt Recording System</h3>
+          <p>A Python console program for recording customer details, credit purchases, down payments, and regular payments. It calculates interest, tracks balances, updates rice prices, and provides staff and customer login menus.</p>
+          <span class="tag">Python</span><span class="tag">Console Application</span>
+          <p style="margin-top:16px"><a href="GST_RICE_TRADING_CONSOLE.py" target="_blank">View Python Code</a></p>
+        </article>
+      </div>
+      <p class="about-text" style="margin-top:18px">Academic group projects can also be added here. Each entry should describe the project and the part I contributed.</p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="contact-box">
+        <p><strong>Phone:</strong> 09353815036</p>
+        <p><strong>Email:</strong> <a href="mailto:broswiley@gmail.com">broswiley@gmail.com</a></p>
+        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/jebey-legaspi-a23105448/" target="_blank" rel="noopener">View LinkedIn Profile</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Jebey G. Legaspi. Student Portfolio.</p>
+  </footer>
+</body>
+</html>
